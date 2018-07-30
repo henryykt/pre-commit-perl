@@ -1,0 +1,12 @@
+-   id: perlcritic
+    name: 'perlcritic'
+    entry: run-perlcritic.sh
+    files: '\.(pl|pm)$'
+    language: 'script'
+    description: "Runs `perlcritic`, requires script in PATH"
+-   id: perltidy
+    name: 'perltidy'
+    entry: run-perltidy.sh
+    files: '\.(pl|pm|t)$'
+    language: 'script'
+    description: "Runs `perltidy`, requires script in PATH"
