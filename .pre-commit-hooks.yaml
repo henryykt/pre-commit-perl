@@ -1,7 +1,7 @@
 -   id: perlcritic
     name: 'perlcritic'
     entry: run-perlcritic.sh
-    files: '\.(pl|pm)$'
+    files: '\.(pl|pm|t)$'
     language: 'script'
     description: "Runs `perlcritic`, requires script in PATH"
 -   id: perltidy

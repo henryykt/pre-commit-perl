@@ -1,23 +1,22 @@
 #!/usr/bin/env bash
 
 # Run perlcritic on perl scripts.
-# perlcritic uses .perlcriticrc if available, otherwise it uses --stern --verbose 8.
+# By default perlcritic looks for .perlcriticrc in the current directory
+# (repository root) and in the home directory. If no configuration file is
+# found then ituses --stern and --verbose 8.
 
 set -eu
 
 cmd=perlcritic
 if ! command -v "${cmd}" >/dev/null 2>&1; then
-    echo "Command ${cmd} not found"
+    echo "This check needs ${cmd} from https://github.com/Perl-Critic/Perl-Critic."
     exit 1
 fi
 
 cfg=.perlcriticrc
-opts=""
-if [[ -r "${cfg}" ]]; then
-    opts=()
-else
-    # Default options
-    opts=(--stern --verbose 8)
+opts=("--quiet")
+if [[ ! -r "${cfg}" ]] && [[ ! -r "$HOME/${cfg}" ]]; then
+    opts+=("--stern" "--verbose" "8")
 fi
 
 failed=false

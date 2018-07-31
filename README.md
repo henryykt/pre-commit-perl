@@ -14,6 +14,6 @@ Add this to your `.pre-commit-config.yaml`
 ## Available hooks
 
 - `perlcritic` - Runs `perlcritic --stern --verbose 8`. Settings can be overriden by
-.perlcriticrc in the repository root.
+.perlcriticrc.
 - `perltidy` - Runs `perltidy -pbp -nst -w -b`. Settings can be overridden by
-.perltidyrc in the repository root.
+.perltidyrc.
