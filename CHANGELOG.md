@@ -1,3 +1,7 @@
+0.0.4
+=====
+- Fix for perltidy without .perltidyrc
+
 0.0.3
 =====
 - Include .PL files

@@ -17,7 +17,7 @@ fi
 cfg=.perltidyrc
 opts=(--nostandard-output --warning-output --backup-and-modify-in-place)
 if [[ ! -r "${cfg}" ]] && [[ ! -r "$HOME/${cfg}" ]]; then
-    opts+=("--noprofile" "--perl-best-practices")
+    opts=("--noprofile" "--perl-best-practices" "${opts[@]}")
 fi
 
 if ! output=$("${cmd}" "${opts[@]}" "$@" 2>&1); then
