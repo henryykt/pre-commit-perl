@@ -3,7 +3,7 @@
 # Run perlcritic on perl scripts.
 # By default perlcritic looks for .perlcriticrc in the current directory
 # (repository root) and in the home directory. If no configuration file is
-# found then ituses --stern and --verbose 8.
+# found then it uses --stern and --verbose 8.
 
 set -eu
 
