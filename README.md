@@ -5,7 +5,7 @@ perl hooks for https://pre-commit.com/
 
 Add this to your `.pre-commit-config.yaml`
 
-    - repo: github.com/henryykt/pre-commit-perl
+    - repo: https://github.com/henryykt/pre-commit-perl
       rev: v0.0.4
       hooks:
         - id: perlcritic
