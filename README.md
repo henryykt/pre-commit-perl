@@ -5,7 +5,7 @@ perl hooks for https://pre-commit.com/
 
 Add this to your `.pre-commit-config.yaml`
 
-    - repo: github.com/henryykt/pre-commit-perl
+    - repo: https://github.com/henryykt/pre-commit-perl
       rev: v0.0.4
       hooks:
         - id: perlcritic
@@ -13,7 +13,7 @@ Add this to your `.pre-commit-config.yaml`
 
 ## Available hooks
 
-- `perlcritic` - Runs `perlcritic --stern --verbose 8`. Settings can be overriden by
+- `perlcritic` - Runs `perlcritic --stern --verbose 8`. Settings can be overridden by
 .perlcriticrc.
 - `perltidy` - Runs `perltidy -pbp -nst -w -b`. Settings can be overridden by
 .perltidyrc.
