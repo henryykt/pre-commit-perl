@@ -20,7 +20,8 @@ if [[ ! -r "${cfg}" ]] && [[ ! -r "$HOME/${cfg}" ]]; then
     opts=("--noprofile" "--perl-best-practices" "${opts[@]}")
 fi
 
-if ! output=$("${cmd}" "${opts[@]}" "$@" 2>&1); then
+if ! output=$("${cmd}" "${opts[@]}" "$@" 2>&1) ||
+   [[ "${output}" == *"## Please see file "*.ERR* ]]; then
     echo "${output}"
     exit 1
 fi
