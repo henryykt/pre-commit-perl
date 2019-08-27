@@ -8,6 +8,12 @@
 
 set -eu
 
+version=20190601
+if ! perl -MPerl::Tidy=${version} -e1 >/dev/null 2>&1; then
+    echo "Please update Perl::Tidy to at least verion ${version}";
+    exit 1;
+fi
+
 cmd=perltidy
 if ! command -v "${cmd}" >/dev/null 2>&1; then
     echo "This check needs ${cmd} from http://perltidy.sourceforge.net/."
