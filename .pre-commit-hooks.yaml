@@ -7,6 +7,7 @@
 -   id: perltidy
     name: 'perltidy'
     entry: run-perltidy.sh
+    args: [--min-version=20021130]
     files: '\.(pl|pm|t|PL)$'
     language: 'script'
     description: "Runs `perltidy`, requires script in PATH"
