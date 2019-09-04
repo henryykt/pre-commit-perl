@@ -39,7 +39,7 @@ done
 
 # check for minversion
 if ! perl -MPerl::Tidy=${minversion} -e1 >/dev/null 2>&1; then
-    echo "Please update Perl::Tidy to at least verion ${minversion}";
+    echo "Please update Perl::Tidy to at least version ${minversion}";
     exit 1;
 fi
 
