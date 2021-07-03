@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v1.4.0
+    rev: v2.3.0
     hooks:
     -   id: check-merge-conflict
     -   id: check-yaml
@@ -9,7 +9,7 @@ repos:
         files: .gitignore
     -   id: trailing-whitespace
 -   repo:  https://github.com/jumanjihouse/pre-commit-hooks
-    sha:   1.8.0
+    rev: 2.1.5
     hooks:
     -   id: shfmt
         args: ['-w', '-i', '4', '-ci']
