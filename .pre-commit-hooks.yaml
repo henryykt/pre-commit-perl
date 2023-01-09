@@ -1,12 +1,14 @@
 -   id: perlcritic
     name: 'perlcritic'
     entry: run-perlcritic.sh
+    types_or: [perl, file]
     files: '\.(pl|pm|t|PL)$'
     language: 'script'
     description: "Runs `perlcritic`, requires script in PATH"
 -   id: perltidy
     name: 'perltidy'
     entry: run-perltidy.sh
+    types_or: [perl, file]
     files: '\.(pl|pm|t|PL)$'
     language: 'script'
     description: "Runs `perltidy`, requires script in PATH"
