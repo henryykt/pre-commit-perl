@@ -1,3 +1,8 @@
+0.0.5
+=====
+- use types perl at perlcritic and perltidy hooks (#6)
+- add perlimports hooks (#5)
+
 0.0.4
 =====
 - Fix for perltidy without .perltidyrc

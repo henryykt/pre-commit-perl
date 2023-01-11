@@ -21,7 +21,7 @@ if [[ ! -r "${cfg}" ]] && [[ ! -r "$HOME/${cfg}" ]]; then
 fi
 
 if ! output=$("${cmd}" "${opts[@]}" "$@" 2>&1) ||
-   [[ "${output}" == *"## Please see file "*.ERR* ]]; then
+    [[ "${output}" == *"## Please see file "*.ERR* ]]; then
     echo "${output}"
     exit 1
 fi
